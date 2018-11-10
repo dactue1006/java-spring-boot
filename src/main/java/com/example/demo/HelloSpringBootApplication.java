@@ -8,20 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class HelloSpringBootApplication extends SpringBootServletInitializer{
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-      return application.sources(HelloSpringBootApplication.class);
-   }
-
-	public static void main(String[] args) {
-		SpringApplication.run(HelloSpringBootApplication.class, args);
-	}
-	
-	@RequestMapping(value = "/")
-	public String Hello() {
-		return "Hello from Tom Cat";
-	}
+   public static void main(String[] args) {
+	      SpringApplication.run(HelloSpringBootApplication.class, args);
+	   }
 }
